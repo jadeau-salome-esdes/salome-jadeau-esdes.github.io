@@ -1,0 +1,361 @@
+@font-face{
+    font-family: "Traveling_Typewriter";
+    src : url(../fonts/TravelingTypewriter.ttf);
+}
+
+@font-face{
+    font-family: "Roboto-light";
+    src : url(../fonts/roboto/Roboto-Light.ttf);
+}
+
+@font-face{
+    font-family :"Century_Gothic";
+    src : url(../fonts/Century-Gothic.ttf);
+}
+
+@font-face{
+    font-family: "Typo_round";
+    src : url(../fonts/typo_round/Typo_Round_Light_Demo.otf);
+}
+
+@font-face{
+    font-family: "Typo_round_bold";
+    src : url(../fonts/typo_round/Typo_Round_Bold_Demo.otf);
+}
+
+body {
+    margin: 0;
+    height: cover;
+    font-family: "Roboto-Light";
+}
+
+header {
+    min-height: 25%;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-between;
+    text-align: center;
+    padding: 15px;
+    background-color: RGB(225,235,245);
+    flex-wrap: wrap;
+}
+
+h1{
+    font-family: "Century_Gothic";
+    font-size: 30px;
+}
+
+h2{
+    font-family: "Century_Gothic";
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h4{
+    font-family: "Typo_round_bold";
+    font-size: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+#profil-img{
+    width: 240px;
+    height: 300px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+#social img{
+    margin: 5px;
+    padding-left: 15px;
+}
+
+#current-nav-item{
+    background-color: #406289;
+}
+
+nav{
+    background-color: #88a5c7;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+article{
+    margin: 0;
+    flex: 1;
+    
+}
+
+.nav-item{
+    height: 75px;
+    min-width: 200px;
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-item:hover{
+    background-color: #334559;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-item a, .nav-item a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #d5e3f3;
+    color : black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Typo_round";
+}
+
+#linkedin{
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+/** RESPONSIVE **/
+/* Mobile */
+@media screen and (max-width : 600px){
+    #profile{
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    flex: 1;
+}
+    #social{
+    min-width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: space-between;
+}
+    #social div{
+    width: 200px;
+
+}
+
+#competences{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+    width: 100%;
+}
+
+#skills{
+    width: 100%;
+
+}
+
+aside{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: "Typo_round"
+}
+
+article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    text-align: justify;
+    width: 60%;
+    min-width: 300px;;
+    font-size: 14px;
+    font-family: "Typo_round";
+}
+
+h4{
+    font-size: 20px;
+}
+
+progress{
+    margin-left: 20px;
+}
+
+}
+
+/* Tablette */
+@media only screen and (min-width: 600px) and (max-width: 900px){
+#profile{
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    flex: 1;
+}
+#social{
+    min-width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-items: space-between;
+}
+#social div{
+    width: 200px;
+}
+
+#competences{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+    width: 100%;
+}
+
+#skills{
+    width: 100%;
+
+}
+
+aside{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: "Typo_round";
+}
+
+article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    text-align: justify;
+    width: 60%;
+    min-width: 300px;;
+    font-size: 14px;
+    font-family: "Typo_round";
+}
+
+h4{
+    font-size: 20px;
+}
+
+progress{
+    margin-left: 20px;
+}
+
+}
+
+/* ORDI */
+@media screen and (min-width: 900px) {
+#profile{
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    flex: 1;
+}
+#social{
+    min-width: 250px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: space-between;
+}
+#social div{
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+} 
+
+#competences{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: center;
+    width: 100%;
+}
+
+#skills{
+    width: 50%;
+}
+
+aside{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: "Typo_round";
+}
+
+article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    text-align: justify;
+    width: 60%;
+    min-width: 300px;;
+    font-size: 14px;
+    font-family: "Typo_round";
+}
+
+h4{
+    font-size: 20px;
+}
+
+progress{
+    margin-left: 20px;
+}
+
+}
